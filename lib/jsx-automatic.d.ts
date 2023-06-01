@@ -7,9 +7,9 @@ export namespace JSX {
   type Element = HResult
 
   /**
-   * This disallows the use of functional components.
+   * Instrinsic attributes are props that are always allowed even if not explicitly defined in the component.
    */
-  type IntrinsicAttributes = never
+  type IntrinsicAttributes = {key?: any}
 
   /**
    * This defines the prop types for known elements.
